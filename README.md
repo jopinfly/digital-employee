@@ -115,6 +115,11 @@ ADMIN_NAME=Administrator
 
 ### 3. 初始化数据库
 
+> **注意**：Prisma CLI 只读取 `.env`，不读取 `.env.local`。执行前需复制一份：
+> ```bash
+> cp .env.local .env
+> ```
+
 ```bash
 # 同步数据表结构到 Neon
 npx prisma db push
