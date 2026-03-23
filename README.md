@@ -94,7 +94,6 @@ NEXTAUTH_SECRET=your-random-secret
 
 # 必填：Neon 数据库连接串（在 Neon 控制台获取）
 DATABASE_URL="postgresql://..."
-DIRECT_URL="postgresql://..."
 
 # 必填：Vercel Blob Token（在 Vercel 项目设置中创建）
 BLOB_READ_WRITE_TOKEN=vercel_blob_rw_...
