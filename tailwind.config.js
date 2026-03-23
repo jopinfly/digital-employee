@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+const config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,7 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Brand palette
         brand: {
           50:  "#f0f4ff",
           100: "#e0e9ff",
@@ -23,7 +21,6 @@ const config: Config = {
           800: "#2b29a8",
           900: "#282884",
         },
-        // Surface tokens (dark)
         surface: {
           950: "#09090b",
           900: "#0f0f12",
@@ -66,4 +63,4 @@ const config: Config = {
   plugins: [],
 };
 
-export default config;
+module.exports = config;
